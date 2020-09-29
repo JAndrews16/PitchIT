@@ -8,7 +8,7 @@ if (process.env.JAWSDB_URL) {
       port: 3306,
       user: "root",
       password: "CabMcb2017",
-      database: "mj41besmlh1d5zy"
+      database: "sequelize_pitchit"
     });
 };
 connection.connect(function(err) {
