@@ -7,7 +7,7 @@ if (process.env.JAWSDB_URL) {
       host: "localhost",
       port: 3306,
       user: "root",
-      password: "MYSQL_ENV",
+      password: process.env.MYSQL_ENV,
       database: "sequelize_pitchit"
     });
 };

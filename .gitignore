@@ -1,6 +1,8 @@
-sendgrid.env
-sendgrid.env
-sendgrid.env
-sendgrid.env
+# Ignore node_modules folder
+/node_modules
 
+#Ignore files related to passwords and API Keys
 .env
+
+#Ignore config file
+./config/config.json
