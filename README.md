@@ -20,7 +20,7 @@ Follow the sign-up instructions to create an account and start planning your tri
 Corey Burkett, Juliana Andrews, Armando Osorio, Saudamini Keshav.
 
 ## Questions
-Corey Burkett: Coreyburkett22@gmail.com
-Juliana Andrews: Julianakandrews@gmail.com
-Saudamini Keshav: Saudamini.Keshav@gmail.com
+Corey Burkett: Coreyburkett22@gmail.com <br />
+Juliana Andrews: Julianakandrews@gmail.com <br />
+Saudamini Keshav: Saudamini.Keshav@gmail.com <br />
 Armando Osorio: Osoriomando2345@gmail.com
