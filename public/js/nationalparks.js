@@ -34,7 +34,7 @@ let urlAr = ["https://www.nps.gov/cari/index.htm", "https://www.nps.gov/chis/ind
 // let parkCodesAr = ["ARCH", "BRCA", "CANY", "CARE", "CAVE", "DEVA", "GRBA", "GRCA", "GRSA", "GUMO", "JOTR", "KICA", "LAKE", "MEVE", "MOJA", "SAGU", "SEQU", "ZION"];
 // for(i = 0; i < parkCodesAr.length; i++) {
 //     let parkCode = parkCodesAr[i];
-//     let apiKey = 'Cz73kVYJzbhAkHWqVSxeyXyeRx5q01oBXc9Pdhtz';
+//     let apiKey = 'PARKS_API_KEY';
 //     let campURL = `https://developer.nps.gov/api/v1/parks?parkCode=${parkCode}&api_key=${apiKey}`;
 // $.ajax({
 //     url: campURL,
