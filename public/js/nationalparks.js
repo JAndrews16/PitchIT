@@ -13,7 +13,7 @@ let optionsTags = [];
     let parkCode = parkAr[i];
 
     //Key only used to generate code, not needed for application functionality
-    //let apiKey = 'PARKS_API_KEY';
+    //let apiKey = process.env.PARKS_API_KEY;
     //let campURL = `https://developer.nps.gov/api/v1/parks?parkCode=${parkCode}&api_key=${apiKey}`;
 
     // $.ajax({

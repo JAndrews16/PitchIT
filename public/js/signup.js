@@ -2,13 +2,13 @@
 
 // Initialize Firebase
 var firebaseConfig = {
-  apiKey: "FIREBASE_API",
+  apiKey: process.env.FIREBASE_API,
   authDomain: "pitch-it-firebase.firebaseapp.com",
   databaseURL: "https://pitch-it-firebase.firebaseio.com",
   projectId: "pitch-it-firebase",
   storageBucket: "pitch-it-firebase.appspot.com",
   messagingSenderId: "603643031651",
-  appId: "FIREBASE_APPID",
+  appId: process.env.FIREBASE_APPID,
   measurementId: "G-T3G428HX8G"
 };
 
