@@ -23,19 +23,23 @@ var messageRef = firebase.database().ref("messages")
 
 const anim = $("#anim");
 anim.toggleClass("hideForm");
-
+$("#formcontainer").toggleClass("hideForm");
 $(document).ready(function () {
 
   window.addEventListener("load", function () {
     init();
   });
 
+  // function animation() {
+  //   setTimeout(function () {
+  //     $(".day").fadeOut(1000);
+  //   }, 500);
+  // };
+
   function init() {
-    $("#formcontainer").toggleClass("hideForm");
     setTimeout(function () {
-      $("#formcontainer").fadeIn(1500);
-      $(".day").toggleClass("hideForm")
-    }, 2000);
+      $("#formcontainer").fadeIn(1000);
+    }, 250);
   };
 
   // Getting references to our form and input
