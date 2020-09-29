@@ -131,7 +131,7 @@ module.exports = function (app) {
         }).then(function () {
             sendTripEmail(username, userEmail, req.body.title, req.body.date, req.body.location, req.body.campers, req.body.items, req.body.completed, req.body.review);
             console.log("saved trip");
-
+            res.redirect("/dashboard");
         }).catch(function (err) {
             console.log("error in routes file");
         });
@@ -184,7 +184,7 @@ async function sendSignupEmail(email) {
     let mailOptions = {
         from: 'pitch.it.devs@gmail.com',
         to: email,
-        subject: "test",
+        subject: "Welcome to PitchIT!",
         html: `
         <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
         <br><h2>Welcome to the Pitch It!</h2><br>
@@ -221,7 +221,7 @@ async function sendTripEmail(username, userEmail, title, date, location, campers
     let mailOptions = {
         from: 'pitch.it.devs@gmail.com',
         to: userEmail,
-        subject: "test",
+        subject: "You Started a New Adventure!",
         html: `
         <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
         <br><h2>Here is a summary of the trip you created!</h2><br>
@@ -231,8 +231,6 @@ async function sendTripEmail(username, userEmail, title, date, location, campers
         <li> <h2>Location: ${location}</h2></li>
         <li> <h2>Campers: ${campers}</h2></li>
         <li><h2> Items: ${items}</h2></li>
-        <li><h2> Completed: ${completed}</h2></li>
-        <li> <h2>Review: ${review}</h2></li>
         </ul>
         `
     };

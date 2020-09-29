@@ -1,4 +1,3 @@
-
 $(function() {
   
   //Event listener for add people button on create trip form
@@ -16,7 +15,6 @@ $(function() {
         $("#campers").val("");
       }
   });
-  
   
   // This is for the submit button to populate the new camping trip
   $(".submit-trip").on("click", function(event) {
