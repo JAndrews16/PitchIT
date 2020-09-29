@@ -13,22 +13,22 @@ let optionsTags = [];
     let parkCode = parkAr[i];
 
     //Key only used to generate code, not needed for application functionality
-    let apiKey = 'PARKS_API_KEY';
-    let campURL = `https://developer.nps.gov/api/v1/parks?parkCode=${parkCode}&api_key=${apiKey}`;
+    //let apiKey = 'PARKS_API_KEY';
+    //let campURL = `https://developer.nps.gov/api/v1/parks?parkCode=${parkCode}&api_key=${apiKey}`;
 
-    $.ajax({
-        url: campURL,
-        method: "GET"
-    }).then(function (response) {
+    // $.ajax({
+    //     url: campURL,
+    //     method: "GET"
+    // }).then(function (response) {
         //console.log(response);
 
-        let fullName = response.data[0].fullName;
-        let images0 = response.data[0].images[1].url;
-        let moreInfoUrl = response.data[0].url;
+        // let fullName = response.data[0].fullName;
+        // let images0 = response.data[0].images[1].url;
+        // let moreInfoUrl = response.data[0].url;
 
-        let newTag = `<option class="${fullName}" data-image="${images0}" data-url="${moreInfoUrl}">${fullName}</option>`;
+        //let newTag = `<option class="${fullName}" data-image="${images0}" data-url="${moreInfoUrl}">${fullName}</option>`;
 
-        optionsTags.push(newTag);
+       // optionsTags.push(newTag);
 
     //The below worked to load the database from the original API call 
     //However this proved to slow down the application
@@ -48,7 +48,7 @@ let optionsTags = [];
         // }).then( function() {
         //     console.log("created new park");
         // });
-    });
+    // });
 };
 
 console.log(optionsTags);
