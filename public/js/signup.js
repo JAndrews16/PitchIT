@@ -1,14 +1,12 @@
-//Region Firebase setup
-
 // Initialize Firebase
 var firebaseConfig = {
-  apiKey: process.env.FIREBASE_API,
+  apiKey: "AIzaSyAwSYf_hueKmdVUBUaNwdf_jAyEYS7OODw",
   authDomain: "pitch-it-firebase.firebaseapp.com",
   databaseURL: "https://pitch-it-firebase.firebaseio.com",
   projectId: "pitch-it-firebase",
   storageBucket: "pitch-it-firebase.appspot.com",
   messagingSenderId: "603643031651",
-  appId: process.env.FIREBASE_APPID,
+  appId: "1:603643031651:web:807d273ed56cc196d98856",
   measurementId: "G-T3G428HX8G"
 };
 
