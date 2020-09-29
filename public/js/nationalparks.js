@@ -50,5 +50,3 @@ let optionsTags = [];
         // });
     });
 };
-
-console.log(optionsTags);
