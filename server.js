@@ -22,7 +22,6 @@ app.engine('handlebars', exphbs({
   handlebars: allowInsecurePrototypeAccess(Handlebars)
 }));
 
-//app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // We need to use sessions to keep track of our user's login status

@@ -1,7 +1,6 @@
 /* ---------- Gallery ---------- */
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /* background-color: rgba(37, 37, 37, 0.794) !important; */
     background-image: linear-gradient(to bottom left, rgb(16, 97, 13), rgb(158, 233, 140), rgb(255, 255, 255));
 }
 
