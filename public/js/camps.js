@@ -1,5 +1,4 @@
 $(function() {
-  
   //Event listener for add people button on create trip form
   $(".add-btn").on("click", function(event) {
       event.preventDefault();

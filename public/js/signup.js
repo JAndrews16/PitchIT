@@ -1,12 +1,12 @@
 // Initialize Firebase
 var firebaseConfig = {
-  apiKey: "AIzaSyAwSYf_hueKmdVUBUaNwdf_jAyEYS7OODw",
+  apiKey: process.env.FIREBASE_API,
   authDomain: "pitch-it-firebase.firebaseapp.com",
   databaseURL: "https://pitch-it-firebase.firebaseio.com",
   projectId: "pitch-it-firebase",
   storageBucket: "pitch-it-firebase.appspot.com",
   messagingSenderId: "603643031651",
-  appId: "1:603643031651:web:807d273ed56cc196d98856",
+  appId: process.env.FIREBASE_APPID,
   measurementId: "G-T3G428HX8G"
 };
 
@@ -17,8 +17,6 @@ var database = firebase.database();
 var messageRef = firebase.database().ref("messages")
 
 //End region
-
-
 const anim = $("#anim");
 anim.toggleClass("hideForm");
 $("#formcontainer").toggleClass("hideForm");

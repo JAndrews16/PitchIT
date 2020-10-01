@@ -9,8 +9,6 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 var db = require("./models");
 
-require('dotenv').config();
-
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -44,7 +42,7 @@ let transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'pitch.it.devs@gmail.com',
-    pass: 'TestPassword123'
+    pass: process.env.DEVS_GMAIL_PASS
   }
 });
 

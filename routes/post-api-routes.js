@@ -174,7 +174,7 @@ async function sendSignupEmail(email) {
         port: 465,
         auth: {
             user: 'pitch.it.devs@gmail.com',
-            pass: 'TestPassword123'
+            pass: process.env.DEVS_GMAIL_PASS
         },
         tls: {
             rejectUnauthorized: false
@@ -211,7 +211,7 @@ async function sendTripEmail(username, userEmail, title, date, location, campers
         port: 465,
         auth: {
             user: 'pitch.it.devs@gmail.com',
-            pass: 'TestPassword123'
+            pass: process.env.DEVS_GMAIL_APP
         },
         tls: {
             rejectUnauthorized: false
