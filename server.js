@@ -42,7 +42,7 @@ let transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'pitch.it.devs@gmail.com',
-    pass: process.env.DEVS_GMAIL_PASS
+    pass: 'TestPassword123'
   }
 });
 
